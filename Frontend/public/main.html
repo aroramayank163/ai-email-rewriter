@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <h1>AI Email Rewriter</h1>
+        <p>Rewrite emails with better tone and clarity.</p>
+    </div>
+
+    <div class="editor-section">
+        <div class="field-group">
+            <label for="in">Input</label>
+            <textarea name="input" id="in"></textarea>
+        </div>
+
+        <div class="field-group">
+            <label for="out">Output</label>
+            <textarea name="output" id="out" readonly placeholder="Loading..."></textarea>
+        </div>
+    </div>
+
+    <form id="run-form">
+        <div class="controls">
+            <label><input type="checkbox" name="persuasive" id="persuasive"> Persuasive</label>
+            <label><input type="checkbox" name="professional" id="professional"> Professional</label>
+            <label><input type="checkbox" name="academic" id="academic"> Academic</label>
+        </div>
+
+        <div class="button-row">
+            <button type="submit">Rewrite</button>
+            <p class="hint">For devs: Ctrl/Cmd + Shift + I</p>
+        </div>
+    </form>
+</div>
+    <script src="/script.js"></script>
+</body>
+</html>
